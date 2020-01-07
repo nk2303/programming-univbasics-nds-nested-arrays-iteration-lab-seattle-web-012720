@@ -35,7 +35,7 @@ def total_even_pairs(src)
   # this!
   total = 0
   src.each do |element|
-    newArray.push(element[0] > element[1] ? element[0] : element[1])
+    total += (element[0] % 2 == 0 && element[1] % 2 == 0 ? element[0] + element[2] : 0)
   end
-  return newArray
+  return total
 end
